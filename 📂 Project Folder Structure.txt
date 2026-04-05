@@ -1,0 +1,126 @@
+📂 Project Folder Structure
+ServiceNow-UI-Policy-Project/
+│── README.md
+│── Documentation.md
+│── .gitignore
+│
+├── Screenshots/
+│   ├── form_view.png
+│   ├── ui_policy.png
+│   ├── mandatory_fields.png
+│
+├── Update_Set_XML/
+│   └── student_request_ui_policy.xml
+│
+└── Demo/
+    └── demo_video_link.txt
+📄 1. README.md
+# 📌 Enforcing Mandatory Fields Using UI Policies and Migrating Changes with Update Sets
+
+## 📖 Overview
+This project demonstrates how to enforce mandatory fields dynamically using UI Policies in ServiceNow and migrate configurations using Update Sets.
+
+---
+
+## ❗ Problem Statement
+Users often submit incomplete forms which leads to poor data quality and delays.
+
+---
+
+## 🎯 Objective
+- Create a custom table
+- Apply UI Policies
+- Test mandatory fields
+- Migrate using Update Sets
+
+---
+
+## 🛠️ Technologies Used
+- ServiceNow
+- UI Policies
+- Update Sets
+
+---
+
+## 🧩 Modules
+### 1. Table Creation
+Student Request table with fields:
+- Name
+- Request Type
+- Reason
+- Manager Approval
+
+### 2. UI Policy
+Condition:
+- Request Type = Leave
+
+Action:
+- Make Reason mandatory
+- Make Manager Approval mandatory
+
+### 3. Testing
+- Leave selected → Fields mandatory
+- Other → Not mandatory
+
+### 4. Update Sets
+- Create update set
+- Capture changes
+- Export & import
+
+---
+
+## ✅ Result
+- Dynamic validation achieved
+- Data quality improved
+- Easy migration
+
+---
+
+## 📂 Project Structure
+See folders for screenshots and update set XML.
+
+---
+
+## 👨‍💻 Author
+Your Name
+📄 2. Documentation.md
+# 📘 Project Documentation
+
+## Introduction
+This project focuses on enforcing mandatory fields using UI Policies in ServiceNow.
+
+## Table Creation
+A custom table "Student Request" is created.
+
+## UI Policy
+If Request Type = Leave:
+- Reason → Mandatory
+- Manager Approval → Mandatory
+
+## Testing
+Verified using form behavior.
+
+## Update Sets
+All changes captured and migrated using update sets.
+
+## Conclusion
+Improves data quality and ensures smooth deployment.
+📄 3. .gitignore
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore temp files
+*.tmp
+📄 4. Update_Set_XML/student_request_ui_policy.xml
+<update_set>
+    <name>Student Request UI Policy</name>
+    <description>Enforces mandatory fields when Request Type is Leave</description>
+</update_set>
+📄 5. Demo/demo_video_link.txt
+Add your demo video link here
+Example:
+https://drive.google.com/your-demo-link
